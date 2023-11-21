@@ -31,7 +31,7 @@ else:
         reader = csv.DictReader(f)
 
         for row in reader:
-            if row['hitechComplex'] == True:
+            if row['hitechComplex'] == 'True':
                 update_hitech(row['OGRN'])
                 n += 1
             else:
